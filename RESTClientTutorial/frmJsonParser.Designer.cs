@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmJsonParser));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtRawJson = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -59,6 +60,7 @@
             this.txtRawJson.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtRawJson.Size = new System.Drawing.Size(763, 278);
             this.txtRawJson.TabIndex = 0;
+            this.txtRawJson.Text = resources.GetString("txtRawJson.Text");
             // 
             // groupBox2
             // 

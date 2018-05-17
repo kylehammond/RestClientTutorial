@@ -6,16 +6,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.UI.WebControls.WebParts;
 using Newtonsoft.Json;
+using RestClientTutorial.JsonObjects;
 
 namespace RestClientTutorial.Services
 {
     public static class JsonService
     {
-        public static dynamic GetDeserializedJson(string json)
+        public static T GetDeserializedJson<T>(string json)
         {
             try
             {
-                var deserializedObject = JsonConvert.DeserializeObject<dynamic>(json);
+                var deserializedObject = JsonConvert.DeserializeObject<T>(json);
                 return deserializedObject;
             }
             catch (Exception e)

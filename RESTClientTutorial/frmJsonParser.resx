@@ -117,4 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="txtRawJson.Text" xml:space="preserve">
+    <value>{
+  "firstname": "Roger",
+  "lastname": "Moore",
+  "age": 89,
+  "isAlive": false,
+  "address": {
+    "streetaddress": "1 Main Street",
+    "city": "London",
+    "postcode": "N1 3XX"
+  },
+  "phonenumbers": [
+    {
+      "type": "home",
+      "number": "+61 03 1234 5678"
+    },
+    {
+      "type": "mobile",
+      "number": "+61 0405 111 222"
+    }
+  ]
+}
+</value>
+  </data>
 </root>
