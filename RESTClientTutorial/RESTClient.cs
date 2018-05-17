@@ -6,14 +6,14 @@ namespace RestClientTutorial
 {
     internal class RestClient
     {
-        public string EndPoint { get; set; }
-        public HttpMethod HttpMethod { get; set; }
-
         public RestClient(string endPoint)
         {
             EndPoint = endPoint;
             HttpMethod = HttpMethod.GET;
         }
+
+        private string EndPoint { get; }
+        private HttpMethod HttpMethod { get; }
 
         public string MakeRequest()
         {
@@ -21,7 +21,7 @@ namespace RestClientTutorial
             var request = WebRequest.Create(EndPoint);
             request.Method = HttpMethod.ToString();
 
-            using (var response = (HttpWebResponse)request.GetResponse())
+            using (var response = (HttpWebResponse) request.GetResponse())
             {
                 if (response.StatusCode != HttpStatusCode.OK)
                     throw new ApplicationException("Error code: " + response.StatusCode);

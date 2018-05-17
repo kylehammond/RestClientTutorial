@@ -29,7 +29,6 @@ namespace RestClientTutorial
         {
             var restClient = new RestClient(txtRestUri.Text);
             WriteResponse(restClient.MakeRequest());
-
         }
 
         private void btnClear_Click(object sender, EventArgs e)
