@@ -11,31 +11,15 @@ namespace RestClientTutorial
             InitializeComponent();
         }
 
-        #region Helpers
-
-        private void WriteResponse(string response)
-        {
-            Debug.Write(response + Environment.NewLine);
-            txtResponse.Text = txtResponse.Text + response + Environment.NewLine;
-            txtResponse.SelectionStart = txtResponse.TextLength;
-            txtResponse.ScrollToCaret();
-        }
-
-        #endregion
-
-        #region Event Handlers
-
         private void btnGo_Click(object sender, EventArgs e)
         {
             var restClient = new RestClient(txtRestUri.Text);
-            WriteResponse(restClient.MakeRequest());
+            Services.WriteToTextBox(restClient.MakeRequest(), txtResponse);
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
             txtResponse.Clear();
         }
-
-        #endregion
     }
 }

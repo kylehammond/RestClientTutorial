@@ -28,12 +28,8 @@ namespace RestClientTutorial
 
                 // process the response stream (could be json, xml, html, etc..)
                 using (var responseStream = response.GetResponseStream())
-                {
-                    using (var reader = new StreamReader(responseStream))
-                    {
-                        responseValue = reader.ReadToEnd();
-                    }
-                }
+                using (var reader = new StreamReader(responseStream))
+                    responseValue = reader.ReadToEnd();
             }
 
             return responseValue;
