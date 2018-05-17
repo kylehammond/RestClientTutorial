@@ -1,12 +1,13 @@
 ﻿using System;
 using System.IO;
 using System.Net;
+using RestClientTutorial.Constants;
 
 namespace RestClientTutorial.Services
 {
-    internal class RestClient
+    internal class RestService
     {
-        public RestClient(string endPoint)
+        public RestService(string endPoint)
         {
             EndPoint = endPoint;
             HttpMethod = HttpMethod.GET;

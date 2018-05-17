@@ -49,32 +49,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmJsonParser.cs">
+    <Compile Include="Forms\frmJsonParser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmJsonParser.Designer.cs">
+    <Compile Include="Forms\frmJsonParser.Designer.cs">
       <DependentUpon>frmJsonParser.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRestClient.cs">
+    <Compile Include="Forms\frmRestClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRestClient.Designer.cs">
+    <Compile Include="Forms\frmRestClient.Designer.cs">
       <DependentUpon>frmRestClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="HttpMethod.cs" />
-    <Compile Include="JsonObjects\Address.cs" />
-    <Compile Include="JsonObjects\Person.cs" />
-    <Compile Include="JsonObjects\PersonSimple.cs" />
-    <Compile Include="JsonObjects\PhoneNumber.cs" />
+    <Compile Include="Constants\HttpMethod.cs" />
+    <Compile Include="JsonModels\Address.cs" />
+    <Compile Include="JsonModels\Person.cs" />
+    <Compile Include="JsonModels\PhoneNumber.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\JsonService.cs" />
-    <Compile Include="Services\RestClient.cs" />
-    <Compile Include="Services\FormService.cs" />
-    <EmbeddedResource Include="frmJsonParser.resx">
+    <Compile Include="Services\RestService.cs" />
+    <Compile Include="Services\WinFormService.cs" />
+    <EmbeddedResource Include="Forms\frmJsonParser.resx">
       <DependentUpon>frmJsonParser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRestClient.resx">
+    <EmbeddedResource Include="Forms\frmRestClient.resx">
       <DependentUpon>frmRestClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -101,5 +100,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

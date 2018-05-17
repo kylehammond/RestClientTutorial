@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using RestClientTutorial.Services;
 
-namespace RestClientTutorial
+namespace RestClientTutorial.Forms
 {
     public partial class frmRestClient : Form
     {
@@ -13,8 +13,8 @@ namespace RestClientTutorial
 
         private void btnGo_Click(object sender, EventArgs e)
         {
-            var restClient = new RestClient(txtRestUri.Text);
-            FormService.WriteToTextBox(restClient.MakeRequest(), txtResponse);
+            var restClient = new RestService(txtRestUri.Text);
+            WinFormService.WriteToTextBox(restClient.MakeRequest(), txtResponse);
         }
 
         private void btnClear_Click(object sender, EventArgs e)

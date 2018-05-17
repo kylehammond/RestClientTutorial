@@ -5,7 +5,7 @@ using System.Windows.Forms;
 namespace RestClientTutorial.Services
 {
     //todo: can these be extension methods?
-    public static class FormService
+    public static class WinFormService
     {
         public static void WriteToTextBox(string response, TextBox textBox)
         {

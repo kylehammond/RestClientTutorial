@@ -1,4 +1,4 @@
-﻿namespace RestClientTutorial
+﻿namespace RestClientTutorial.Forms
 {
     partial class frmJsonParser
     {

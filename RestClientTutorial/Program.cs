@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using RestClientTutorial.Forms;
 
 namespace RestClientTutorial
 {
@@ -13,6 +14,7 @@ namespace RestClientTutorial
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new frmRestClient());
             Application.Run(new frmJsonParser());
         }
     }

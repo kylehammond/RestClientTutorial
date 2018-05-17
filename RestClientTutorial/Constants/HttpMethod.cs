@@ -1,4 +1,4 @@
-﻿namespace RestClientTutorial
+﻿namespace RestClientTutorial.Constants
 {
     public enum HttpMethod
     {
