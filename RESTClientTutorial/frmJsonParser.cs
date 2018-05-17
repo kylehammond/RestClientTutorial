@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace JsonParserTutorial
+namespace RestClientTutorial
 {
     public partial class frmJsonParser : Form
     {
@@ -14,14 +14,14 @@ namespace JsonParserTutorial
 
         private void btnDeserialize_Click(object sender, EventArgs e)
         {
-
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-
+            txtRawJson.Clear();
+            txtOutput.Clear();
         }
 
-        #endregion 
+        #endregion
     }
 }

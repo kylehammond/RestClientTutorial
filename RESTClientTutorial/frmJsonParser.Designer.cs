@@ -1,4 +1,4 @@
-﻿namespace JsonParserTutorial
+﻿namespace RestClientTutorial
 {
     partial class frmJsonParser
     {

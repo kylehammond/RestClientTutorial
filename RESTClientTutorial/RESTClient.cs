@@ -27,9 +27,10 @@ namespace RestClientTutorial
                     throw new ApplicationException("Error code: " + response.StatusCode);
 
                 // process the response stream (could be json, xml, html, etc..)
-                using (var responseStream = response.GetResponseStream())
-                using (var reader = new StreamReader(responseStream))
+                using (var reader = new StreamReader(response.GetResponseStream()))
+                {
                     responseValue = reader.ReadToEnd();
+                }
             }
 
             return responseValue;
