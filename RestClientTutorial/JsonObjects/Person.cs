@@ -13,5 +13,6 @@ namespace RestClientTutorial.JsonObjects
         public int age { get; set; }
         public bool isalive { get; set; }
         public Address address { get; set; }
+        public List<PhoneNumber> phonenumbers { get; set; }
     }
 }

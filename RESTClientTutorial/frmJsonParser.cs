@@ -18,11 +18,15 @@ namespace RestClientTutorial
         {
             txtOutput.Clear();
 
-            var deserializedObject = JsonService.GetDeserializedJson<Person>(txtRawJson.Text);
+            var person = JsonService.GetDeserializedJson<Person>(txtRawJson.Text);
 
-            FormService.WriteToTextBox(deserializedObject.ToString(), txtOutput);
-            FormService.WriteToTextBox("Random property: " + deserializedObject.lastname, txtOutput);
-            FormService.WriteToTextBox("Random property: " + deserializedObject.address.streetaddress, txtOutput);
+            FormService.WriteToTextBox(person.ToString(), txtOutput);
+            FormService.WriteToTextBox("Last name: " + person.lastname, txtOutput);
+            FormService.WriteToTextBox("Address: " + person.address.streetaddress, txtOutput);
+            foreach (var phonenumber in person.phonenumbers)
+            {
+                FormService.WriteToTextBox("Phone number: " + phonenumber.number, txtOutput);
+            }
         }
 
         private void btnClear_Click(object sender, EventArgs e)
