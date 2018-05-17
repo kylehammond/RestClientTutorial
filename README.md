@@ -3,9 +3,10 @@ Just some code written along a tutorial on yt from binarythistle
 
 https://www.youtube.com/watch?v=11f5KzVNQ90 basics
 https://www.youtube.com/watch?v=CjoAYslTKX0 json parse
+https://www.youtube.com/watch?v=XX5pn4pJ4b0 auth 
 
 
-
+## JSON vid
 JSON - JavaScript Object Notation
 
 contains:
@@ -55,3 +56,12 @@ his json example
   ]
 }
 
+
+alternatives to json
+xml
+yaml (yet another markup language)
+html
+csv
+
+
+## Authentication vid
