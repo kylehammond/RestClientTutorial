@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using RestClientTutorial.Services;
 
 namespace RestClientTutorial
 {
@@ -13,7 +14,7 @@ namespace RestClientTutorial
         private void btnGo_Click(object sender, EventArgs e)
         {
             var restClient = new RestClient(txtRestUri.Text);
-            Services.WriteToTextBox(restClient.MakeRequest(), txtResponse);
+            Helpers.WriteToTextBox(restClient.MakeRequest(), txtResponse);
         }
 
         private void btnClear_Click(object sender, EventArgs e)

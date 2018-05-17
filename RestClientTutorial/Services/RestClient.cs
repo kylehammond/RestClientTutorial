@@ -2,7 +2,7 @@
 using System.IO;
 using System.Net;
 
-namespace RestClientTutorial
+namespace RestClientTutorial.Services
 {
     internal class RestClient
     {

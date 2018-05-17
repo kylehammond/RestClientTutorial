@@ -13,7 +13,7 @@ namespace RestClientTutorial
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmRestClient());
+            Application.Run(new frmJsonParser());
         }
     }
 }

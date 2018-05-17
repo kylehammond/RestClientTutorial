@@ -2,9 +2,10 @@
 using System.Diagnostics;
 using System.Windows.Forms;
 
-namespace RestClientTutorial
+namespace RestClientTutorial.Services
 {
-    public static class Services
+    //todo: can these be extension methods?
+    public static class Helpers
     {
         public static void WriteToTextBox(string response, TextBox textBox)
         {

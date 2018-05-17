@@ -64,8 +64,9 @@
     <Compile Include="HttpMethod.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RestClient.cs" />
-    <Compile Include="Services.cs" />
+    <Compile Include="Services\JsonService.cs" />
+    <Compile Include="Services\RestClient.cs" />
+    <Compile Include="Services\Helpers.cs" />
     <EmbeddedResource Include="frmJsonParser.resx">
       <DependentUpon>frmJsonParser.cs</DependentUpon>
     </EmbeddedResource>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using RestClientTutorial.Services;
 
 namespace RestClientTutorial
 {
@@ -14,6 +15,7 @@ namespace RestClientTutorial
 
         private void btnDeserialize_Click(object sender, EventArgs e)
         {
+            Helpers.WriteToTextBox(JsonService.GetDeserializedJson(txtRawJson.Text).ToString(), txtOutput);
         }
 
         private void btnClear_Click(object sender, EventArgs e)
