@@ -14,7 +14,7 @@ namespace RestClientTutorial
         private void btnGo_Click(object sender, EventArgs e)
         {
             var restClient = new RestClient(txtRestUri.Text);
-            Helpers.WriteToTextBox(restClient.MakeRequest(), txtResponse);
+            FormService.WriteToTextBox(restClient.MakeRequest(), txtResponse);
         }
 
         private void btnClear_Click(object sender, EventArgs e)

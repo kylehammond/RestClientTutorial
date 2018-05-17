@@ -15,7 +15,12 @@ namespace RestClientTutorial
 
         private void btnDeserialize_Click(object sender, EventArgs e)
         {
-            Helpers.WriteToTextBox(JsonService.GetDeserializedJson(txtRawJson.Text).ToString(), txtOutput);
+            txtOutput.Clear();
+
+            var deserializedObject = JsonService.GetDeserializedJson(txtRawJson.Text);
+
+            FormService.WriteToTextBox(deserializedObject.ToString(), txtOutput);
+            FormService.WriteToTextBox("Random property: " + deserializedObject.lastname, txtOutput);
         }
 
         private void btnClear_Click(object sender, EventArgs e)
