@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants\AuthenticationTechnique.cs" />
+    <Compile Include="Constants\AuthenticationType.cs" />
     <Compile Include="Forms\frmJsonParser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +69,7 @@
     <Compile Include="JsonModels\PhoneNumber.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\BasicCredentials.cs" />
     <Compile Include="Services\JsonService.cs" />
     <Compile Include="Services\RestService.cs" />
     <Compile Include="Services\WinFormService.cs" />
