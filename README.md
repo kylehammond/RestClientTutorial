@@ -1,9 +1,14 @@
 # RestClientTutorial
-Just some code written along a tutorial on yt from binarythistle
+This was my notes and code following along a few video tutorials.
 
-https://www.youtube.com/watch?v=11f5KzVNQ90 basics
-https://www.youtube.com/watch?v=CjoAYslTKX0 json parse
-https://www.youtube.com/watch?v=XX5pn4pJ4b0 auth 
+
+
+
+Youtuber:  binarythistle
+
+https://www.youtube.com/watch?v=11f5KzVNQ90 basics   
+https://www.youtube.com/watch?v=CjoAYslTKX0 json parse   
+https://www.youtube.com/watch?v=XX5pn4pJ4b0 auth   
 
 
 ## JSON vid
@@ -65,3 +70,4 @@ csv
 
 
 ## Authentication vid
+I must not have gotten further into this section
